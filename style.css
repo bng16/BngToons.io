@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Geologica&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Alfa Slab One', cursive;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color:#9B8C75;
+    position: fixed;
+    z-index: -1;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+
+.page{
+    height: 100vh;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    scroll-snap-align: start;
+
+}
+.page img{
+    width: 20vw;
+}
+.page h1{
+    margin-top: 3vh;
+    font-size: 80px;
+}
+
+
